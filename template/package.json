@@ -14,7 +14,8 @@
     "next": "10.0.5",
     "next-i18next": "^7.0.1",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-svg": "^11.2.2"
   },
   "devDependencies": {
     "@types/node": "^14.14.20",

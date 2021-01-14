@@ -2,6 +2,12 @@
   "compilerOptions": {
     "allowJs": true,
     "alwaysStrict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/component/*": ["component/*"],
+      "@/component/atoms/*": ["component/atoms/*"],
+      "@/component/molecules/*": ["component/molecules/*"],
+    },
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
