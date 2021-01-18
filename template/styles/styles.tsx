@@ -3,7 +3,7 @@ import { css, Global } from '@emotion/react';
 export const globalStyle = (
   <Global
     styles={css`
-      body,
+      <style > body,
       html,
       a {
         font-family: 'Ubuntu', sans-serif;
@@ -14,7 +14,7 @@ export const globalStyle = (
         padding: 0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #000;
         overflow-x: hidden;
       }
 
@@ -59,36 +59,6 @@ export const globalStyle = (
 
       *:focus {
         outline: none;
-      }
-
-      .about-block-image svg {
-        text-align: center;
-      }
-
-      .ant-drawer-body {
-        display: flex;
-        flex-direction: column;
-        padding: 1.25rem;
-        text-align: left;
-        padding-top: 2.5rem;
-        padding-right: 2rem;
-      }
-
-      .ant-select-selector {
-        background-color: #fcfcfd !important;
-        border: none !important;
-      }
-
-      .anticon.ant-notification-notice-icon-success {
-        color: rgb(255, 130, 92);
-      }
-
-      .ant-select-focused .ant-select-selector,
-      .ant-select-selector:focus,
-      .ant-select-selector:active,
-      .ant-select-open .ant-select-selector {
-        border-color: #d9d9d9 !important;
-        box-shadow: none !important;
       }
     `}
   />
