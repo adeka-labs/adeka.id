@@ -1,5 +1,3 @@
-import Button from '@/component/atoms/Button';
-import ButtonOutline from '@/component/atoms/ButtonOutline';
 import React from 'react';
 import tw from 'twin.macro';
 

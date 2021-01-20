@@ -1,5 +1,5 @@
 import Button from '@/component/atoms/Button';
-import ButtonOutline from '@/component/atoms/ButtonOutline';
+import { useRouter } from 'next/router';
 import React from 'react';
 import tw from 'twin.macro';
 
@@ -11,17 +11,21 @@ const Caption = tw.p` text-violent-500 mt-6 mb-8 text-lg`;
 const ButtonAction = tw.div`flex justify-between max-w-xs`;
 
 const Hero = () => {
+  const router = useRouter();
+  const handleClick = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+    router.push('https://s.id/xj4xO');
+  };
   return (
     <Row>
       <ColumnLeft>
-        <Heading>Light, Fast & Responsive</Heading>
+        <Heading>Have an awesome idea and want to make it real?</Heading>
         <Caption>
-          This template is ready to use, so you don't need to change anything at
-          a component level, unless you want to customize the default styling.
+          let’s brief of your idea and see the magic work to solving your
+          problems to make the great project real for you.
         </Caption>
         <ButtonAction>
-          <Button>Explore</Button>
-          <ButtonOutline>Learn More</ButtonOutline>
+          <Button onClick={handleClick}>Plan a Product</Button>
         </ButtonAction>
       </ColumnLeft>
       <ColumnRight>

@@ -17,6 +17,11 @@ module.exports = {
         alabaster: {
           500: '#f9fafc',
         },
+        orange: {
+          dark: '#fe7624',
+          medium: '#FF662A',
+          brand: '#FF662A',
+        },
       },
     },
   },

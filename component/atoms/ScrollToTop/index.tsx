@@ -1,3 +1,4 @@
+// @ts-ignore
 import tw from 'twin.macro';
 
 const ScrollToTop = () => {

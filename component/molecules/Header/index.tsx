@@ -1,5 +1,6 @@
 import Button from '@/component/atoms/Button';
 import React from 'react';
+import { useRouter } from 'next/router';
 import tw from 'twin.macro';
 
 const Head = tw.header`w-full relative max-w-screen-xl mx-auto px-12 py-8 overflow-hidden`;
@@ -9,7 +10,13 @@ const NavLink = tw.a`px-4 mx-3 pb-2 text-violent-500 transition-all `;
 const LogoLink = tw.a``;
 const LogoImg = tw.img`h-24 w-24`;
 const MenuLeft = tw.div`ml-8`;
+
 const Header = () => {
+  const router = useRouter();
+  const handleClick = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+    router.push('https://s.id/xj4xO');
+  };
   return (
     <Head>
       <Menu>
@@ -17,11 +24,12 @@ const Header = () => {
           <LogoImg src="/assets/svg/adeka-logo.svg" />
         </LogoLink>
         <MenuWrapper>
-          <NavLink href="#">About</NavLink>
-          <NavLink href="#">Product</NavLink>
-          <NavLink href="#">Pricing</NavLink>
+          <NavLink href="https://github.com/adeka-factory/">Github</NavLink>
+          <NavLink href="https://www.instagram.com/adeka.io/">
+            Instagram
+          </NavLink>
           <MenuLeft>
-            <Button> Contact us</Button>
+            <Button onClick={handleClick}> Contact us</Button>
           </MenuLeft>
         </MenuWrapper>
       </Menu>
