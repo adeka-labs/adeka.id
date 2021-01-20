@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import tw from 'twin.macro';
 
-const Row = tw.div`grid grid-cols-2 gap-8`;
-const ColumnLeft = tw.div`flex flex-col`;
-const ColumnRight = tw.div`flex w-full px-8`;
+const Row = tw.div`grid grid-cols-1 sm:grid-cols-2 grid-flow-row sm:grid-rows-2 gap-8`;
+const ColumnLeft = tw.div`flex flex-col my-12 sm:my-0`;
+const ColumnRight = tw.div`flex w-full sm:px-8 row-start-1`;
 const Heading = tw.h6`font-bold text-4xl`;
 const Caption = tw.p` text-violent-500 mt-6 mb-8 text-lg`;
 const ButtonAction = tw.div`flex justify-between max-w-xs`;
