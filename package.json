@@ -13,6 +13,8 @@
     "@emotion/react": "^11.1.4",
     "@emotion/server": "^11.0.0",
     "@emotion/styled": "^11.0.0",
+    "@types/react-responsive": "^8.0.2",
+    "framer-motion": "^3.2.1",
     "next": "latest",
     "next-i18next": "^7.0.1",
     "react": "^17.0.1",
