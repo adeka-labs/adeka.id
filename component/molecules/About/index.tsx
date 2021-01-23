@@ -1,8 +1,8 @@
 import React from 'react';
 import tw from 'twin.macro';
+import Row from '@/component/templates/Row';
 
-const Row = tw.div`grid grid-cols-2 gap-8`;
-const ColumnLeft = tw.div`flex px-8`;
+const ColumnLeft = tw.div`flex px-8 my-12 sm:my-0`;
 const ColumnRight = tw.div`flex flex-col justify-center `;
 const Heading = tw.h6`font-bold text-4xl`;
 const Caption = tw.p` text-violent-500 mt-6 mb-8 text-lg`;

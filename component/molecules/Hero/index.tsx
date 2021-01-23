@@ -4,7 +4,7 @@ import React from 'react';
 import tw from 'twin.macro';
 import { motion } from 'framer-motion';
 
-const Row = tw.div`grid grid-cols-1 sm:grid-cols-2 grid-flow-row sm:grid-rows-2 gap-8`;
+const Row = tw.div`grid grid-cols-1 sm:grid-cols-2 grid-flow-row sm:grid-rows-1 gap-8`;
 const ColumnLeft = tw(motion.div)`flex flex-col my-12 sm:my-0`;
 const ColumnRight = tw(motion.div)`flex w-full sm:px-8 row-start-1`;
 const Heading = tw.h6`font-bold text-4xl`;

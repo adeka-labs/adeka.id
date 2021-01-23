@@ -1,9 +1,10 @@
 import React from 'react';
 import tw from 'twin.macro';
+import Row from '@/component/templates/Row';
 
-const Row = tw.div`grid grid-cols-2 gap-8`;
-const ColumnLeft = tw.div`flex flex-col justify-center`;
-const ColumnRight = tw.div`flex w-full px-8`;
+// const Row = tw.div`grid grid-cols-2 gap-8`;
+const ColumnLeft = tw.div`flex flex-col justify-center my-12 sm:my-0 order-2 sm:order-1`;
+const ColumnRight = tw.div`flex w-full px-8 order-1 sm:order-2`;
 const Heading = tw.h6`font-bold text-4xl`;
 const Caption = tw.p` text-violent-500 mt-6 mb-8 text-lg`;
 

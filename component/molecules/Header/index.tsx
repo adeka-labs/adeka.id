@@ -1,5 +1,6 @@
 import Button from '@/component/atoms/Button';
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import { useRouter } from 'next/router';
 import tw from 'twin.macro';
@@ -8,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Head = tw.header`w-full relative max-w-screen-xl mx-auto px-8 sm:px-12 py-8 overflow-hidden`;
 const Menu = tw.nav`flex w-full items-center justify-between`;
-const MenuWrapper = tw.div`flex w-full max-w-md items-center`;
+const MenuWrapper = tw.div`flex min-w-min items-center`;
 const NavLink = tw.a`px-4 mx-3 pb-2 text-violent-500 transition-all `;
 const LogoLink = tw.a``;
 const LogoImg = tw(motion.img)`h-24 w-24`;
@@ -37,10 +38,13 @@ const Header = () => {
         </LogoLink>
         {isMobile ? (
           <MenuWrapper>
-            <NavLink href="https://github.com/adeka-factory/">Github</NavLink>
-            <NavLink href="https://www.instagram.com/adeka.io/">
-              Instagram
-            </NavLink>
+            <NavLink href="https://github.com/adeka-factory/">About us</NavLink>
+            <Link href="/pricing" passHref>
+              <NavLink>Pricing</NavLink>
+            </Link>
+            <Link href="/portofolio" passHref>
+              <NavLink>Portofolio</NavLink>
+            </Link>
             <MenuLeft>
               <Button onClick={handleClick}> Contact us</Button>
             </MenuLeft>
