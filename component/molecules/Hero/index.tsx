@@ -30,7 +30,9 @@ const Hero = () => {
           problems to make the great project real for you.
         </Caption>
         <ButtonAction>
-          <Button onClick={handleClick}>Plan a Product</Button>
+          <Button isPrimary onClick={handleClick}>
+            Plan a Product
+          </Button>
         </ButtonAction>
       </ColumnLeft>
       <ColumnRight

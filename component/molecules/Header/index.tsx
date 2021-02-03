@@ -18,7 +18,7 @@ const MenuMobile = tw.div`px-2 py-1 text-orange-dark w-12 h-12 flex items-center
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const isMobile = useMediaQuery({ query: '(min-width: 450px)' });
+  const isNotMobile = useMediaQuery({ query: '(max-width: 450px)' });
   const router = useRouter();
   const handleClick = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -30,14 +30,13 @@ const Header = () => {
   return (
     <Head>
       <Menu>
-        <LogoLink href="adek.com">
+        <LogoLink href="/">
           <LogoImg
             whileHover={{ y: '-1rem' }}
             src="/assets/svg/adeka-logo.svg"
           />
         </LogoLink>
-        {isMobile ? (
-          <MenuWrapper>
+        {/* <MenuWrapper>
             <NavLink href="https://github.com/adeka-factory/">About us</NavLink>
             <Link href="/pricing" passHref>
               <NavLink>Pricing</NavLink>
@@ -48,8 +47,8 @@ const Header = () => {
             <MenuLeft>
               <Button onClick={handleClick}> Contact us</Button>
             </MenuLeft>
-          </MenuWrapper>
-        ) : (
+          </MenuWrapper> */}
+        {isNotMobile ? (
           <MenuMobile onClick={handleClose}>
             <svg
               className="w-6 h-6"
@@ -66,6 +65,22 @@ const Header = () => {
               />
             </svg>
           </MenuMobile>
+        ) : (
+          <MenuWrapper>
+            <NavLink href="https://github.com/adeka-factory/">About us</NavLink>
+            <Link href="/pricing" passHref>
+              <NavLink>Pricing</NavLink>
+            </Link>
+            <Link href="/portofolio" passHref>
+              <NavLink>Portofolio</NavLink>
+            </Link>
+            <MenuLeft>
+              <Button isPrimary onClick={handleClick}>
+                {' '}
+                Contact us
+              </Button>
+            </MenuLeft>
+          </MenuWrapper>
         )}
       </Menu>
       <AnimatePresence>

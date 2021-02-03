@@ -17,7 +17,7 @@ const Introduction = () => {
           in the JSON files, so that you can manage the texts without having any
           prior knowledge in developing web applications using React.js.
         </TextParagraf>
-        <Button>Get Started</Button>
+        <Button isPrimary>Get Started</Button>
       </ContentWrapper>
     </Row>
   );

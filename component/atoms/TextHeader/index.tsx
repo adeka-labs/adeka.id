@@ -1,16 +1,17 @@
 import React from 'react';
-import tw from 'twin.macro';
-
-const Heading = tw.h6`mb-4 font-semibold text-4xl`;
+import tw, { TwStyle } from 'twin.macro';
 
 interface Props {
   children: React.ReactNode;
+  addClass?: TwStyle;
 }
 
-const TextHeader = ({ children }: Props) => {
+const Heading = tw.h6`mb-4 font-semibold text-4xl`;
+
+const TextHeader = ({ children, addClass }: Props) => {
   return (
     <>
-      <Heading>{children}</Heading>
+      <Heading css={[addClass]}>{children}</Heading>
     </>
   );
 };

@@ -59,7 +59,9 @@ const SidebarMobile = ({ handleClick, handleClose }: Props) => {
             Instagram
           </MenuItem>
           <MenuItem>
-            <Button onClick={handleClick}>Plan a Product </Button>
+            <Button isPrimary onClick={handleClick}>
+              Plan a Product{' '}
+            </Button>
           </MenuItem>
         </MenuList>
       </Sidebar>

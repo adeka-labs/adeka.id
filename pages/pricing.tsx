@@ -12,8 +12,6 @@ const Pricing = () => {
       <Header />
       <Section>
         <Introduction />
-      </Section>
-      <Section>
         <TablePricing />
       </Section>
     </>

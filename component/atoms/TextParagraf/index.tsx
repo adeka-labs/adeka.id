@@ -1,16 +1,21 @@
 import React from 'react';
 import tw from 'twin.macro';
 
-const Paragraf = tw.p`text-lg py-3 mb-4`;
-
-interface Props {
+interface ComponentProps {
   children: React.ReactNode;
+  addClass?: any;
 }
 
-const TextHeader = ({ children }: Props) => {
+// interface PropsParagraf {
+//   className?: string;
+// }
+
+const Paragraf = tw.p`text-lg py-3 mb-4 `;
+
+const TextHeader = ({ children, addClass }: ComponentProps) => {
   return (
     <>
-      <Paragraf>{children}</Paragraf>
+      <Paragraf css={[addClass]}>{children}</Paragraf>
     </>
   );
 };
