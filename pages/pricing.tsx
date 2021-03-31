@@ -4,6 +4,8 @@ import React from 'react';
 import Introduction from '@/component/molecules/Introduction';
 import Section from '@/component/templates/Section';
 import TablePricing from '@/component/molecules/TablePricing';
+import Footer from '@/component/templates/Footer';
+import ContentFooter from '@/component/molecules/ContentFooter';
 
 const Pricing = () => {
   return (
@@ -14,6 +16,9 @@ const Pricing = () => {
         <Introduction />
         <TablePricing />
       </Section>
+      <Footer>
+        <ContentFooter />
+      </Footer>
     </>
   );
 };
