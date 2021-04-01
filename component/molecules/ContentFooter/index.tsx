@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import tw from 'twin.macro';
 
@@ -25,7 +26,7 @@ const ContentFooter = () => {
           Do you have any question regarding the project? Feel free to reach
           out.
         </Paragraf>
-        <Email href="mailto:adeka@gmail.com"> Let's Chat</Email>
+        <Email href="mailto:hello.adeka@gmail.com"> Let's Chat</Email>
       </ListBig>
       <ListSmall>
         <Heading> Company </Heading>
@@ -40,17 +41,21 @@ const ContentFooter = () => {
       <Wrap />
       <Footnote>
         <LogoContainer>
-          <LogoLink href="adek.com">
+          <LogoLink>
             <LogoImg src="/assets/svg/adeka-logo.svg" />
           </LogoLink>
         </LogoContainer>
         <SocialContainer>
-          <SocialLink href="instagram.com">
-            <SocialImg src="/assets/svg/instagram.svg" />
-          </SocialLink>
-          <SocialLink href="github.com">
-            <SocialImg src="/assets/svg/github.svg" />
-          </SocialLink>
+          <Link passHref href="https://www.instagram.com/adeka.factory/">
+            <SocialLink>
+              <SocialImg src="/assets/svg/instagram.svg" />
+            </SocialLink>
+          </Link>
+          <Link passHref href="https://github.com/adeka-factory">
+            <SocialLink>
+              <SocialImg src="/assets/svg/github.svg" />
+            </SocialLink>
+          </Link>
         </SocialContainer>
       </Footnote>
     </Wrapper>
