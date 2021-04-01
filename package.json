@@ -26,6 +26,7 @@
     "@emotion/babel-plugin": "^11.1.2",
     "@types/node": "^14.14.20",
     "@types/react": "^17.0.0",
+    "babel-plugin-inline-react-svg": "^1.1.2",
     "babel-plugin-macros": "^3.0.1",
     "postcss": "^8.2.4",
     "tailwindcss": "^2.0.2",

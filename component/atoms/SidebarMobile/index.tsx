@@ -2,6 +2,7 @@ import React from 'react';
 import tw from 'twin.macro';
 import Button from '@/component/atoms/Button';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Container = tw.div`h-screen fixed left-0 right-0 z-20 top-0 bottom-0`;
 const Overlay = tw(motion.div)`w-full h-full absolute bg-black opacity-50`;
@@ -54,12 +55,22 @@ const SidebarMobile = ({ handleClick, handleClose }: Props) => {
           </ButtonClose>
         </Head>
         <MenuList>
-          <MenuItem href="https://github.com/adeka-factory/">Github</MenuItem>
-          <MenuItem href="https://www.instagram.com/adeka.io/">
-            Instagram
-          </MenuItem>
+          <Link passHref href="https://github.com/adeka-factory/">
+            <MenuItem>About us</MenuItem>
+          </Link>
+          <Link passHref href="https://github.com/adeka-factory/">
+            <MenuItem>Github</MenuItem>
+          </Link>
+          <Link href="https://blog.adeka.id" passHref>
+            <MenuItem>Blog</MenuItem>
+          </Link>
+          <Link href="/pricing" passHref>
+            <MenuItem>Pricing</MenuItem>
+          </Link>
           <MenuItem>
-            <Button onClick={handleClick}>Plan a Product </Button>
+            <Button isPrimary onClick={handleClick}>
+              Plan a Product{' '}
+            </Button>
           </MenuItem>
         </MenuList>
       </Sidebar>
