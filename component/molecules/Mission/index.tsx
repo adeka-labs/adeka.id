@@ -1,6 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import Row from '@/component/templates/Row';
+import Link from 'next/link'
 
 // const Row = tw.div`grid grid-cols-2 gap-8`;
 const ColumnLeft = tw.div`flex flex-col justify-center my-12 sm:my-0 order-2 sm:order-1`;
@@ -12,13 +13,9 @@ const Mission = () => {
   return (
     <Row>
       <ColumnLeft>
-        <Heading>Ready made sections</Heading>
+        <Heading>We ❤️ open source</Heading>
         <Caption>
-          Landy comes with a set of ready to use sections to help you easily
-          create a landing page for your own brand, with all the content your
-          startup desires. In order to replace any dummy elements (text, image,
-          etc..) all you need to do is go to content folder and input your real
-          content.
+        Some of the products we build use open source libraries such as nextjs as the frontend with wordpress, strapi, ghost as the backend. Why nextjs? we have ABON principle: Alaways Bet On Nextjs. Check out our experiments at our <Link href="https://github.com/adeka-factory">Github</Link>
         </Caption>
       </ColumnLeft>
       <ColumnRight>

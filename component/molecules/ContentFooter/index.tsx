@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import React from 'react';
-import tw from 'twin.macro';
+import Link from "next/link";
+import React from "react";
+import tw from "twin.macro";
 
 const Wrapper = tw.div`grid grid-cols-11 gap-8 `;
 const ListBig = tw.div`flex flex-col col-span-full sm:col-span-5 justify-start items-start `;
@@ -36,7 +36,7 @@ const ContentFooter = () => {
       </ListSmall>
       <ListSmall>
         <Heading> Address </Heading>
-        <Paragraf>Malang City</Paragraf>
+        <Paragraf>Malang, ID</Paragraf>
       </ListSmall>
       <Wrap />
       <Footnote>

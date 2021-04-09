@@ -19,30 +19,10 @@ const Feature = () => {
         <ImgSection src="/assets/svg/graphs.svg" alt="" />
       </ColumnLeft>
       <ColumnRight>
-        <Heading>Landing page template for developers & startups</Heading>
+        <Heading>We make digital products functional and beautiful</Heading>
         <Caption>
-          Beautifully designed templates using React.js, ant design and
-          styled-components! Save weeks of time and build your landing page in
-          minutes.
+        Technology is now at the heart of every modern company, and as far as we can tell that isn’t changing. To build digital products that enhance people’s lives, help them navigate the world, help them communicate with each other, and solve their problems faster.
         </Caption>
-        <FeaturesList>
-          <OurFeature>
-            <ImgIcon src="/assets/svg/notes.svg" alt="" />
-            <HeadCaption>Why Antd?</HeadCaption>
-            <CaptionSmall>
-              Ant Design is a React UI library that has a lot of easy-to-use
-              components for building elegant UI.
-            </CaptionSmall>
-          </OurFeature>
-          <OurFeature>
-            <ImgIcon src="/assets/svg/notes.svg" alt="" />
-            <HeadCaption>Why styled-components?</HeadCaption>
-            <CaptionSmall>
-              Ant Design is a React UI library that has a lot of easy-to-use
-              components for building elegant UI.
-            </CaptionSmall>
-          </OurFeature>
-        </FeaturesList>
       </ColumnRight>
     </Row>
   );
